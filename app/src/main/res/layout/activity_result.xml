@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="pk.edu.comsats.csquiz.Result"
+    android:background="@drawable/mainmenu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tvout"
+        android:textColor="#ffffff"
+        android:textSize="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PlayAgain"
+        android:id="@+id/playagain"
+        android:background="@drawable/button1"
+        android:textColor="#ffffff"
+        android:onClick="ShiftToGame"
+        android:layout_alignBottom="@+id/tvout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MainMenu"
+        android:id="@+id/mainmenu"
+        android:layout_below="@+id/tvout"
+        android:layout_alignLeft="@+id/playagain"
+        android:layout_alignStart="@+id/playagain"
+        android:background="@drawable/button1"
+        android:textColor="#ffffff"
+        android:onClick="GotoMenu"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/exit"
+        android:background="@drawable/button1"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/mainmenu"
+        android:layout_alignLeft="@+id/mainmenu"
+        android:layout_alignStart="@+id/mainmenu"
+        android:onClick="Exit"/>
+</RelativeLayout>
